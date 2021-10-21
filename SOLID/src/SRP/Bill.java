@@ -23,6 +23,6 @@ public class Bill {
 // VAT kalkulatzen dugu
 		VAT =b.calcVAT(billAmount);
 // Totala kalkulatzen dugu
-		billTotal = a.calcTotal(billAmount, billDeduction, VAT,code);
+		billTotal = (billAmount - billDeduction) + VAT;
 	}
 }
