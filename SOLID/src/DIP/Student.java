@@ -15,7 +15,7 @@ public class Student {
 	public void register(String subject) {
 // Aurrebaldintzak konprobatzen dira
 		PreconditionsAbstraction p = new Preconditions();
-		boolean isPosible = p.isPosible(subject, subjectRecord);
+		boolean isPosible = p.isPossible(subject, subjectRecord);
 		if (isPosible) {
 			// Dedukzioa kalkulatu sex eta edadearen arabera
 			DeductionAbstraction d = new Deduction();
@@ -25,7 +25,7 @@ public class Student {
 			int quote = sq.getPrice(subject);
 			// HashMap batean gordetzen du eta ordaindu behar duen balioa eguneratu
 			subjectRecord.put(subject, null);
-			toCharge = toCharge + (quote - percentaje * quote / 100);
+			toCharge = toCharge + (quote - percentage * quote / 100);
 		}
 	}
 }
