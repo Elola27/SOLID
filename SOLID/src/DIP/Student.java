@@ -1,7 +1,7 @@
 package DIP;
 
 import java.util.HashMap;
-
+//A
 public class Student {
 	public String name;
 	public String sex;
