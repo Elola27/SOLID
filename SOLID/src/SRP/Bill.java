@@ -14,7 +14,7 @@ public class Bill {
 
 // Fakturaren totala kalkulatzen duen metodoa.
 	public void totalCalc() {
-		calculoTotal a=new calculoTotal();
+		//calculoTotal a=new calculoTotal();
 		calculoVAT b=new calculoVAT();
 		calculoDeduction c=new calculoDeduction();
 // Dedukzioa kalkulatu
