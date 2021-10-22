@@ -43,4 +43,13 @@ public class Sheet {
 			f.draw();
 		}
 	}
+	
+	public void calculateAreas() {
+		Enumeration<Figure> efigures=figures.elements();
+		Figure f;
+		while (efigures.hasMoreElements()) {
+			f=efigures.nextElement();
+			System.out.println("Area: " + f.getArea());
+		}
+	}
 } 
