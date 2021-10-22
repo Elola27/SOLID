@@ -1,4 +1,4 @@
-package LSP;
+package LSK;
 
 public class ProbaProiektu {
 
