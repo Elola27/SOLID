@@ -1,6 +1,6 @@
 package ISP;
 
-public class Person {
+public class Person extends EmailSendable implements Telephonable {
 	 String name, address, email, telephone;
 	 public void setName(String n) { name=n; }
 	 public String getName() { return name; }
@@ -9,9 +9,11 @@ public class Person {
 	 public String getAddress() { return address; }
 
 	 public void setEmail (String e) { email=e; }
-	 public String getEmail () { return email; }
+	 @Override
+	 public String getEmailAddress () { return email; }
 
 	 public void setTelephone(String t) { telephone=t; }
+	 
 	 public String getTelephone() { return telephone; }
 
 	}
